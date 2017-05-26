@@ -4,6 +4,31 @@
 #include <QStringList>
 using namespace std;
 
+
+bool Predmet::Obaveza::operator<(const Predmet::Obaveza &o) const {
+    if (!(_vreme < Vreme(0)))
+    {
+        if (!(o._vreme < Vreme(0)))
+            return _rok < o._rok;
+        else
+            return _rok < o._vreme;
+    }
+
+    if (!(o._vreme < Vreme(0)))
+            return _vreme < o._rok;
+
+    return _vreme < o._vreme;
+
+}
+
+Vreme Predmet::Obaveza::vreme() const {
+    return _vreme;
+}
+
+Vreme Predmet::Obaveza::rok() const {
+    return _rok;
+}
+
 void Predmet::dodaj_obavezu(Predmet::Obaveza::tip_obaveze tip, unsigned char broj_mogucih_poena,
                              unsigned char broj_osvojenih_poena, Vreme datum, Vreme rok, QString komentar) {
 
@@ -44,12 +69,37 @@ unsigned char Predmet::ocjena() const {
     return _ocjena;
 }
 
+QString Predmet::naziv() const {
+    return _naziv;
+}
+
 QString Predmet::Obaveza::pisi() const {
     QString qs = QString("%1\n%2\n%3\n%4\n%5\n%6\n").
             arg(_tip).arg(_broj_mogucih_poena).arg(_broj_osvojenih_poena).
             arg(_vreme.pisi()).arg(_rok.pisi()).arg(_komentar);
     return qs;
 }
+
+QString Predmet::Obaveza::pisi_za_korisnika() const {
+    QString qs;
+    if (_tip==Predmet::Obaveza::test)
+        qs = "Test\n";
+    else if (_tip==Predmet::Obaveza::kolokvijum)
+        qs = "Kolokvijum\n";
+    else if (_tip==Predmet::Obaveza::seminarski_rad)
+        qs = "Seminarski rad\n";
+    else if (_tip==Predmet::Obaveza::pismeni_ispit)
+        qs = "Pismeni ispit\n";
+    else
+        qs = "Usmeni ispit\n";
+
+    qs.append(QString("Broj mogucih poena: %2\nBroj osvojenih poena: %3\n"
+                      "Vrijeme obaveze: %4\nRok za obavezu: %5\nKomentar: %6\n").
+              arg(_broj_mogucih_poena).arg(_broj_osvojenih_poena).
+              arg(_vreme.pisi()).arg(_rok.pisi()).arg(_komentar));
+    return qs;
+}
+
 void Predmet::Obaveza::citaj(const QString &qs) {
     QStringList list = qs.split("\n");
     _tip = Predmet::Obaveza::tip_obaveze(list[0].toInt());
@@ -67,14 +117,14 @@ QString Predmet::pisi() const {
         str.append(i->pisi());
     str.append(QString("]\n%1\n%2\n[\n").arg(_ocjena).arg(_profesor));
     for(QVector<QString>::const_iterator i = _literatura.cbegin(); i!=_literatura.cend(); i++)
-        str.append(*i);
+        str.append(*i).append("\n");
     str.append(QString("]\n%1\n}\n").arg(_komentar));
     return str;
 }
 
 void Predmet::citaj(const QString& qs) {
     QStringList lista = qs.split("\n");
-    if (lista.size()<6)
+    if (!lista.contains("["))
         return;
     _naziv = lista[1];
     QStringList::iterator i = lista.begin()+3;
@@ -90,7 +140,7 @@ void Predmet::citaj(const QString& qs) {
         i++;
         rok.citaj(*i);
         i++;
-        dodaj_obavezu(tip, moguci_bod, osvojeni_bod, vreme, rok, *i);
+        this->dodaj_obavezu(tip, moguci_bod, osvojeni_bod, vreme, rok, *i);
         i++;
     }
     i++;
@@ -99,9 +149,9 @@ void Predmet::citaj(const QString& qs) {
     _profesor = *i;
     i++; i++;
     for(; *i!= "]"; i++)
-        dodaj_knjigu(*i);
+        this->dodaj_knjigu(*i);
     i++;
-    _komentar = lista[lista.size()-1];
+    _komentar = *i;
 }
 
 ostream& operator << (ostream& izlaz, const Predmet::Obaveza & obaveza) {

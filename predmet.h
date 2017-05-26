@@ -28,9 +28,12 @@ public:
             usmeni_ispit
         };
 
+        Vreme vreme() const;
+        Vreme rok() const;
+        bool operator<(const Obaveza& o) const;
         QString pisi() const;
         void citaj(const QString &qs);
-
+        QString pisi_za_korisnika() const;
     private:
         tip_obaveze _tip;
         unsigned char _broj_mogucih_poena;
@@ -66,10 +69,11 @@ public:
     Predmet (QString naziv="", unsigned char ocjena=0, QString profesor="", QString komentar="")
         :_naziv(naziv), _obaveze(), _ocjena(ocjena), _profesor(profesor), _literatura(),
           _komentar(komentar)
-    {}
+    {
+    }
 
     /* metod dodaje obavezu u vektor _obaveze */
-    void dodaj_obavezu (Obaveza::tip_obaveze tip, unsigned char broj_mogucih_poena=0,
+    void dodaj_obavezu (Obaveza::tip_obaveze tip=Obaveza::test, unsigned char broj_mogucih_poena=0,
                         unsigned char broj_osvojenih_poena=0, Vreme datum=0, Vreme rok=0,
                         QString komentar="");
 
@@ -91,6 +95,8 @@ public:
 
     /* vraca se ocjena - get metod */
     unsigned char ocjena() const;
+
+    QString naziv() const;
 
     QString pisi() const;
     void citaj(const QString &qs);

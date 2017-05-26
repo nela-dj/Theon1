@@ -7,8 +7,8 @@
 #include <stdexcept>
 #include <QFile>
 #include "ui_predmetqt.h"
+
 using namespace std;
-//mozda ce trebati da se ukljuci <qsignalmapper.h>
 
 static QVector<Predmet> predmeti;
 
@@ -19,11 +19,11 @@ public:
     ~PredmetQt();
 private:
     Ui::PredmetQt *ui;
-    QFile fajl;
 private slots:
     void pokreni();
-    void nastavi();
-
+    void unosPredmeta();
+    void provjeraObaveza();
+    void provjeraSajtova();
 };
 
 

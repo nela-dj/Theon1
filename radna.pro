@@ -16,14 +16,23 @@ SOURCES += main.cpp\
     predmet.cpp \
     vreme.cpp \
     predmetqt.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    obavezaqt.cpp \
+    provjera_obavezaqt.cpp \
+    provjera_sajtovaqt.cpp
 
 HEADERS  += \
     predmet.h \
     vreme.h \
     predmetqt.h \
-    mainwindow.h
+    mainwindow.h \
+    obavezaqt.h \
+    provjera_obavezaqt.h \
+    provjera_sajtovaqt.h
 
 FORMS    += \
     predmetqt.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    obavezaqt.ui \
+    provjera_obavezaqt.ui \
+    provjera_sajtovaqt.ui

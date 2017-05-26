@@ -86,7 +86,7 @@ bool Vreme::operator<(const Vreme & t) const
 
 QString Vreme::pisi() const {
     QString str= QString("%1:%2 %3.%4.%5.").
-            arg(_sat, 2, QChar('0')).arg(_minut, 2, QChar('0')).arg(_dan).arg(_mesec).arg(_godina);
+            arg(int(_sat), 2, 10, QChar('0')).arg(int(_minut), 2, 10, QChar('0')).arg(_dan).arg(_mesec).arg(_godina);
     return str;
 }
 
