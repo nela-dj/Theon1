@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
+ <class>ProvjeraSajtovaQt</class>
  <widget class="QWidget" name="ProvjeraSajtovaQt">
   <property name="geometry">
    <rect>
@@ -44,34 +44,34 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_2</sender>
+   <sender>pushButton</sender>
    <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>close()</slot>
+   <receiver>ProvjeraSajtovaQt</receiver>
+   <slot>ispisi()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>424</x>
-     <y>29</y>
+     <x>130</x>
+     <y>16</y>
     </hint>
     <hint type="destinationlabel">
-     <x>573</x>
-     <y>35</y>
+     <x>2</x>
+     <y>62</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>pushButton_2</sender>
    <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>ispisi()</slot>
+   <receiver>ProvjeraSajtovaQt</receiver>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>105</x>
-     <y>24</y>
+     <x>456</x>
+     <y>32</y>
     </hint>
     <hint type="destinationlabel">
-     <x>5</x>
-     <y>37</y>
+     <x>574</x>
+     <y>75</y>
     </hint>
    </hints>
   </connection>

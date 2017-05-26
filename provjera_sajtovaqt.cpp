@@ -6,6 +6,8 @@
 #include <QWidget>
 #include <QMessageBox>
 #include <QTextEdit>
+#include <QTextStream>
+#include <QProcess>
 
 ProvjeraSajtovaQt::ProvjeraSajtovaQt(QWidget *parent) :
     QWidget(parent), ui(new Ui::ProvjeraSajtovaQt)
@@ -39,4 +41,7 @@ void ProvjeraSajtovaQt::ispisi() {
     //sada treba provjeriti jedan po jedan sajt
     //i ispisati one na kojima ima promjena od posljednje posjete korisnika
     //i naravno sacuvati nove html-ove
+    //QProcess::execute("firefox "+sajtovi[0]+" & ");
+
+
 }

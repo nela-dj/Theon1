@@ -1775,11 +1775,28 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>PromjeneSajtova</sender>
+   <signal>clicked()</signal>
+   <receiver>PredmetQt</receiver>
+   <slot>provjeraSajtova()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>pokreni()</slot>
   <slot>nastavi()</slot>
   <slot>unosPredmeta()</slot>
   <slot>provjeraObaveza()</slot>
+  <slot>provjeraSajtova()</slot>
  </slots>
 </ui>
