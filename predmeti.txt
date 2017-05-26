@@ -1,0 +1,587 @@
+{
+Analiza 1A
+[
+]
+10
+Darko Milinkovic
+[
+]
+
+}
+
+{
+Analiza 1B
+[
+]
+10
+Darko Milinkovic
+[
+]
+
+}
+
+{
+Linearna algebra A
+[
+]
+10
+Aleksandar Lipkovski
+[
+]
+
+}
+
+{
+Linearna algebra B
+[
+]
+10
+Goran Djankovic
+[
+]
+
+}
+
+{
+Programiranje 1
+[
+]
+10
+Filip Maric
+[
+]
+
+}
+
+{
+Programiranje 2
+[
+]
+10
+Mladen Nikolic
+[
+]
+
+}
+
+{
+Uvod u matematicku logiku
+[
+]
+10
+Goran Djankovic
+[
+]
+
+}
+
+{
+Geometrija 1
+[
+]
+10
+Vladica Andrejic
+[
+]
+
+}
+
+{
+Engleski jezik 1
+[
+]
+10
+Irena Pavlovic
+[
+]
+
+}
+
+{
+Engleski jezik 2
+[
+]
+10
+Irena Pavlovic
+[
+]
+
+}
+
+{
+Analiza 2A
+[
+]
+10
+Zoran Kadelburg
+[
+]
+
+}
+
+{
+Analiza 2B
+[
+]
+9
+Zoran Kadelburg
+[
+]
+
+}
+
+{
+Algebra 1
+[
+]
+10
+Zoran Petrovic
+[
+]
+
+}
+
+{
+Algebra 2
+[
+]
+10
+Zoran Petrovic
+[
+]
+
+}
+
+{
+Geometrija 2
+[
+]
+10
+Miroslava Antic
+[
+]
+
+}
+
+{
+Geometrija 3
+[
+]
+9
+Zoran Rakic
+[
+]
+
+}
+
+{
+Uvod u organizaciju racunara
+[
+]
+10
+Mladen Nikolic
+[
+]
+
+}
+
+{
+Objektno orijentisano programiranje
+[
+]
+10
+Vladimir Filipovic
+[
+]
+
+}
+
+{
+Diskretna Matematika
+[
+]
+10
+Goran Djankovic
+[
+]
+
+}
+
+{
+Uvod u numericku matematiku
+[
+]
+10
+Zorica Stanimirovic
+[
+]
+
+}
+
+{
+Vjerovatnoca i statistika A
+[
+]
+10
+Pavle Mladenovic
+[
+]
+
+}
+
+{
+Vjerovatnoca i statistika B
+[
+]
+8
+Pavle Mladenovic
+[
+]
+
+}
+
+{
+Leksicka analiza
+[
+]
+10
+Filip Maric
+[
+]
+
+}
+
+{
+Kompilacija programskih jezika
+[
+]
+0
+Filip Maric
+[
+]
+
+}
+
+{
+Dizajn programskih jezika
+[
+]
+10
+Milena Vujosevic-Janicic
+[
+]
+
+}
+
+{
+Programske paradigme
+[
+]
+9
+Milena Vujosevic-Janicic
+[
+]
+
+}
+
+{
+Diferencijane jednacine
+[
+]
+0
+Jelena Katic
+[
+]
+
+}
+
+{
+Kompleksne funkcije
+[
+]
+8
+Miljan Knezevic
+[
+]
+
+}
+
+{
+Geometrija 5
+[
+]
+9
+Mirjana Djoric
+[
+]
+
+}
+
+{
+Numericke metode
+[
+]
+0
+Zorica Stanimirovic
+[
+]
+
+}
+
+{
+Teorija mjere i integracije
+[
+]
+10
+Dragoljub Keckic
+[
+]
+
+}
+
+{
+Konstrukcija i analiza algoritama
+[
+]
+10
+Miodrag Zivkovic
+[
+]
+
+}
+
+{
+Matematicka logika u racunarstvu
+[
+]
+10
+Nebojsa Ikodinovic
+[
+]
+
+}
+
+{
+Metodika nastave matematike i racunarstva
+[
+]
+10
+Nebojsa Ikodinovic
+[
+]
+
+}
+
+{
+Uvod u relacione baze podataka
+[
+]
+10
+Gordana Pavlovic-Lazetic
+[
+]
+
+}
+
+{
+Arhitektura racunara
+[
+]
+10
+Milan Tuba
+[
+]
+
+}
+
+{
+Uvod u operativne sisteme i racunarske mreze
+[
+]
+10
+Aleksandar Kartelj
+[
+]
+
+}
+
+{
+Operaciona istrazivanja
+[
+]
+10
+Aleksandar Savic
+[
+]
+
+}
+
+{
+Teorija algoritama
+[
+1
+30
+29
+19:00 27.4.2017.
+255:255 255.255.32767.
+
+1
+30
+0
+13:00 3.6.2017
+255:255 255.255.32767.
+
+4
+40
+0
+255:255 255.255.32767.
+255:255 255.255.32767.
+
+]
+0
+Nebojsa Ikodinovic
+[
+]
+
+}
+
+{
+Programski paketi u matematici
+[
+2
+100
+100
+255:255 255.255.32767.
+09:40 21.5.2017.
+Tema: Lagranzov interpolacioni polinom
+]
+10
+Milan Bozic
+[
+]
+
+}
+
+{
+Istorija i filozofija matematike
+[
+2
+30
+0
+255:255 255.255.32767.
+23:59 20.5.2017.
+Tema: Deseti Hilbertov problem
+3
+75
+0
+17:00 23.6.2017.
+255:255 255.255.32767.
+Nekoliko duzih i nekoliko kracih pitanja
+]
+0
+Zoran Petrovic
+[
+]
+
+}
+
+{
+Programiranje baza podataka
+[
+1
+15
+14
+18:00 13.4.2017.
+255:255 255.255.32767.
+Nije uslovan, ima alternativan termin u prvom ispitnom roku
+2
+10
+0
+255:255 255.255.32767.
+14:00 10.6.2017
+
+3
+40
+0
+14:00 7.6.2017.
+255:255 255.255.32767.
+
+4
+35
+0
+255:255 255.255.32767.
+255:255 255.255.32767.
+
+]
+0
+Gordana Pavlovic-Lazetic
+[
+Gordana Pavlovic-Lazetic: Osnove relacionih baza podataka, Matematicki fakultet, Beograd, 1999.
+]
+
+}
+
+{
+Teorija operativnih sistema
+[
+1
+20
+20
+16:00 12.4.2017.
+255:255 255.255.32767.
+
+3
+30
+0
+09:00 22.6.2017.
+255:255 255.255.32767.
+
+4
+50
+0
+255:255 255.255.32767.
+255:255 255.255.32767.
+
+]
+0
+Miroslav Maric
+[
+Miroslav Maric: Operativni sistemi, Matematicki fakultet, Beograd, 2015.
+]
+
+}
+
+{
+Razvoj softvera
+[
+1
+25
+25
+11:30 6.5.2017.
+255:255 255.255.32767.
+Teorija i zadaci.
+2
+20
+0
+255:255 255.255.32767.
+255:255 255.255.32767.
+Projekat obavezan!
+3
+40
+0
+9:00 9.6.2017.
+255:255 255.255.32767.
+Teorija i zadaci.
+4
+15
+0
+255:255 255.255.32767.
+255:255 255.255.32767.
+
+]
+0
+Sasa Malkov
+[
+]
+
+}
